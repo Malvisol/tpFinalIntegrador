@@ -23,9 +23,9 @@
         </div>
 
         <div class="header_menu">    
-            <a href="tendencias.html"> Tendencias </a>         
+            <a href="peliculas.html"> Peliculas </a>        
             <a href="registrarse.html"> Registrarse </a> 
-            <a href="iniciarSesion.html" id="header_menu_iniciar_sesion"> Iniciar Sesión </a>           
+            <a href="inicioSesion.html" id="header_menu_iniciar_sesion"> Iniciar Sesión </a>           
         </div>
     
     </header>
@@ -40,25 +40,18 @@
 
         <section class = "busqueda">
             <h2> ¿Qué estas buscando para ver? </h2>
-            <form class="busqueda_form" id= "busqueda_form">
+            <section class="busqueda_form" id= "busqueda_form">
                 <input type = "search" placeholder="Buscar..." class="input_busqueda" id="txt">
                 <button type="button" class = "boton_busqueda"  id="btnBuscar"> Buscar </button>        
-            </form> 
+            </section> 
             <hr> 
         </section>
     </main>
 
-    <section id="tendencias" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="peliculasTendencia">
-        <h3 class="titulosiguiente">Las tendencias de hoy</h3>
-        <div class="peliculas" id="tendenciasContainer">
-            <!-- Aquí se cargarán las películas tendencia -->
-
-        </section>
-        <hr>
         <section id="tendencias" data-aos="fade-up" data-aos-offset="400" data-aos-delay="100" data-aos-duration="1000" class="peliculasTendencia">
             <h3 class="tituloSection">Las tendencias de hoy</h3>
             <div class="peliculas">
-                <a href="./pages/detalle.html">
+                <a >
                     <div class="pelicula">
                     
                         <img class="imgTendencia" src="./imgs/tendencias/1.jpg" alt="The Beekeeper" loading="lazy">
@@ -69,7 +62,7 @@
                     
                     </div>
                 </a>
-                <a href="./pages/detalle.html">
+                <a >
                     <div class="pelicula">
                     
                         <img class="imgTendencia" src="./imgs/tendencias/2.jpg" alt="Badland Hunters" loading="lazy">
@@ -80,7 +73,7 @@
                     
                     </div>
                 </a>
-                <a href="./pages/detalle.html">
+                <a >
                     <div class="pelicula">
                         
                         <img class="imgTendencia" src="./imgs/tendencias/3.jpg" alt="The Marvels" loading="lazy">
@@ -91,7 +84,7 @@
                     
                     </div>
                 </a>
-                <a href="./pages/detalle.html">
+                <a >
                     <div class="pelicula">
                         
                         <img class="imgTendencia" src="./imgs/tendencias/4.jpg" alt="Wonka" loading="lazy">
@@ -106,10 +99,8 @@
 
 
 
-
         </div>
-        <button class="boton anterior">Anterior</button>  
-        <button class="boton siguiente">Siguiente</button>
+        <hr> 
     </section>
     <section data-aos="fade-up" data-aos-offset="200" data-aos-delay="100" data-aos-duration="2000" class="peliculasAclamadas">
         <h3 class="tituloSection">Las más aclamadas</h3>
@@ -170,10 +161,5 @@
         <script src="https://kit.fontawesome.com/3b9cb261b9.js" crossorigin="anonymous"></script>
 </body>
 
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-    <script src="./js/peliculas.js"></script>
 
 </html>
