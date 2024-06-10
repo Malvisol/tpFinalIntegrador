@@ -1,489 +1,591 @@
 
 :root{
-  --bordo:#9f3647;  /* ← Defino la variable */
-  --texto-blanco: white;
-  --fondo-negro: #181419;  
+    --bordo:#9f3647;  /* ← Defino la variable */
+    --texto-blanco: white;
+    --fondo-negro: #181419;  
+    font-family: 'Nunito', sans-serif;    
+    font-weight: 200 1000;     
+    font-stretch: 100%;    
+    margin: 0; 
+  
 }
-
-*{ /* Selector universal */
-    font-family: 'Nunito', sans-serif;
-    font-weight: 200 1000;
-    font-stretch: 100%;
-    margin: 0;   
-}
-
-
+   
+      
 .texto-blanco{
-   color: var(--texto-blanco); 
+    color: var(--texto-blanco); 
 }
-
+  
+  
 .header{
-height: 9vh;
-background-color: var(--bordo);
-padding-top: 1vh;
-padding-left: 3vw;
-font-size: 1.1rem;
-font-weight: bold;
-min-height: 50px;
+  height: 10vh;
+  background-color: var(--bordo);
+  padding-top: 1vh;
+  padding-left: 3vw;
+  font-size: 1.5 rem;
+  font-weight: bold;
+  min-height: 50px;
+  width: 100vw;
 
-/*flexbox*/
-display:flex;
-justify-content: center;
-align-items: center;
+  /*flexbox*/
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  
 }
+  
+  
 
 .header_logo{
     height: 5vh;
     width: 45vw;
 }
-
-.header_logo_link{
-    text-decoration: none;
+  
+  
+.header_logo_link{ 
+    text-decoration: none;    
     color: var(--texto-blanco);
 }
-
-.header_menu { 
-    height: 10vh;
-    width: 78vw;
-    color: var(--texto-blanco);
+  
+  
+.header_menu {    
+    height: 10vh;    
+    width:70vw;    
+    color: var(--texto-blanco);   
     padding-right: 5vw;    
-
-    /*flexbox*/
-    display:flex;
+      
+    /*flexbox*/   
+    display:flex;   
     justify-content: flex-end;
     align-items: center;
 }
+  
 hr{
     border: 1px solid #9f3647;
     width: 80%;
     margin: 0 auto;
     margin-top: 40px;
 }
-.header_menu a {
-    padding-left: 1vw;
-    padding-right: 1vw;
-    text-decoration: none;   
+  
+.header_menu a {   
+    padding-left: 1vw; 
+    padding-right: 1vw; 
+    text-decoration: none;    
     color: var(--texto-blanco)
 }
-
-#header_menu_iniciar_sesion{
-    background-color: var(--fondo-negro);
-    padding: 1vh;
-    border-radius: 5px;
-    font-size: 1rem; /*son 16 px*/
-    text-decoration: none;   
+  
+  
+#header_menu_iniciar_sesion{ 
+    background-color: var(--fondo-negro);  
+    padding: 1vh;  
+    border-radius: 5px;  
+    font-size: 1rem; /*son 16 px*/  
+    text-decoration: none;     
     color: var(--texto-blanco)
 }
-
+  
+  
+  
 .busqueda{
-    text-align: center;
-    height: 50vh;
-    background-color: var(--fondo-negro);
-    color: var(--texto-blanco);
-    padding-top: 10vh;
+      
+    text-align: center;  
+    height: 50vh;   
+    background-color: var(--fondo-negro);   
+    color: var(--texto-blanco);    
+    padding-top: 10vh;  
     font-size: 1.5rem;
-    
-    /*flexbox*/
-    display: flex;
+      
+      
+    /*flexbox*/   
+    display: flex;   
     flex-direction: column;
 }
-
+  
+  
 .busqueda > H2 + form{
     padding-top:6vh     
 }
-
+  
+  
 .busqueda form input{
-    padding:1vh     
+    padding:1vh       
 }
-
+  
+  
 .input_busqueda{
-padding: 2vh 3vh;
-text-transform: capitalize;
-border-radius: 25px;
-width: 30vw;
-height: 6vh;
-border:none;
-
+    padding: 2vh 3vh;
+    text-transform: capitalize;
+    border-radius: 25px;
+    width: 30vw;
+    height: 6vh;
+    border:none;  
 }
-
+  
+  
 .boton_busqueda{
-padding: 2vh 3vh;
-border-radius: 25px;
-border: 2px solid var(--texto-blanco);
-background-color: var(--bordo);    
-color: var(--texto-blanco);
-font-weight: bold;
-font-size: 1rem;
+  
+    padding: 2vh 3vh;  
+    border-radius: 25px;  
+    border: 2px solid var(--texto-blanco);  
+    background-color: var(--bordo);   
+    color: var(--texto-blanco);  
+    font-weight: bold;  
+    font-size: 1rem; 
 }
-
+  
+  
 .boton_busqueda:hover{
-    font-size: 1.1rem; 
+    font-size: 1.1rem;  
 }
-
-hr{
-    margin:0 auto;
-    margin-top: 15vh;
-    width: 75vw;
-    border: 0.5px solid var(--bordo);
+  
+  
+hr{ 
+    margin:0 auto;      
+    margin-top: 15vh;      
+    width: 75vw;      
+    border: 0.5px solid var(--bordo);  
 }
-
-
+  
+  
+  
 .main{  
-    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(/imgs/general/banner-bg.jpg);
-    height: 90vh; /* altura */
-    width: 100vw; /* ancho */
-    background-size: cover;
-    background-position: center;
-    text-align:center;
-    min-height: 400px;  
-    font-weight: bold;
-
-    /*flexbox*/
-    display:flex;
-    flex-direction: column;
-    align-items: center;    
+      
+    background-image: linear-gradient(to right top, #0000008a, #0000008a), url(/imgs/general/banner-bg.jpg);      
+    height: 90vh; /* altura */      
+    width: 100vw; /* ancho */      
+    background-size: cover;      
+    background-position: center;      
+    text-align:center;      
+    min-height: 400px;       
+    font-weight: bold;  
+      
+    /*flexbox*/      
+    display:flex;      
+    flex-direction: column;      
+    align-items: center; 
+}
+  
+      
+.main_titulo{      
+    padding-top: 20vh;          
+    padding-bottom: 5vh;          
+    font-size: 4rem;          
+    font-weight: 400;      
+}
+  
+      
+.main_subtitulo{    
+    margin-bottom: 5vh;          
+    font-size: 2.2rem;          
+    font-weight: 400;      
+}
+  
+      
+.main_btn_registrarse{      
+    text-decoration: none;         
+    padding: 15px;          
+    background-color:var(--bordo);          
+    color: var(--texto-blanco);          
+    border-radius: 5px;          
+    font-size: 1.2rem;          
+    font-weight: 700;       
+}
+  
+  
+  
+      
+.peliculasTendencia{    
+    width:80%;      
+    margin: 0 auto;     
+    text-align: center;   
+    margin-top: 10px;  
 }
 
-    .main_titulo{
-        padding-top: 20vh;
-        padding-bottom: 5vh;
-        font-size: 4rem;
-        font-weight: 400;
-    }
 
-    .main_subtitulo{
-        margin-bottom: 5vh;
-        font-size: 2.2rem;
-        font-weight: 400;
-    }
-
-    .main_btn_registrarse{
-        text-decoration: none;
-        padding: 15px;
-        background-color:var(--bordo);
-        color: var(--texto-blanco);
-        border-radius: 5px;
-        font-size: 1.2rem;
-        font-weight: 700; 
-    }
-
-
-
-    .peliculasTendencia{
-        width:80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 10px;
-    }
-
-        .peliculas{
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap:60px;
-            a{
-                text-decoration: none;
-                color: #ffffff;
-                .pelicula{
-                    width:200px;
-                    height: 300px;
-                    position: relative;
-                    overflow: hidden;
-                    border-radius: 10px;
-                    transition: all 0.5s ease;
-                   
-                    .imgTendencia{
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                        border-radius: 10px;
-                       
-                    }
-                  
-                    .tituloPelicula{
-                        z-index: 2;
-                        position: absolute;
-                        text-align: center;
-                        top: 50%;
-                        left: 50%;
-                        max-width: 20rem;
-                        width: 100%;
-                        transform: translateY(-50%) translateX(-50%);
-                        h4 {
-                            font-size: 1.6rem;
-                            font-weight: bold;
-                            opacity: 0;
-                            margin-bottom: 0.5rem;
-                            letter-spacing: 0.1rem;
-                            transition: opacity 0.5s ease-in-out;
-    
-                        }
-                    }
-                    &:hover{
-                       box-shadow: 0 0 30px var(--bordo);
-                       transform: scale(0.9);
-                      
-                    }
-                    &:hover .tituloPelicula{
-                        width: 100%;
-                        height: 100%;
-                        backdrop-filter: blur(20px);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                    }
-                    &:hover h4 {
-                        width: 100%;
-                        padding: 0.5rem;
-                        opacity: 1;
-                    }
-                 
-                }
-            }
+  
           
-        }
-        .boton{
-            border: 1px solid white;
-            box-sizing: content-box;
-            margin-top:50px;
-            margin-left:20px;
-            background-color:var(--bordo);
-            color: white;
-            padding: 1rem 1rem;
-            border-radius: 5px;
-            font-size: 1rem;
-            font-weight: 500;
-            text-decoration: none;
-            margin-bottom:60px;
-             /* Agregar efecto de botón presionado */
-             transition: transform 0.3s, box-shadow 0.3s;
-             &:hover {
-                 background-color: var(--bordo);
-                 transform: scale(0.95);
-                 box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
-             }
-
-        }
-    
-    .titulosiguiente{
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 40px;
-    }
-
-
-
-
-    .peliculasAclamadas{
-        width:80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom:60px;
-    }
-
-    .titulo_peliculas_aclamadas{
-        font-size: 2.5rem;
-        font-weight: 700;
-        margin-bottom: 40px;
-    }
-    .peliculasAclamadas{
-        width:80%;
-        margin: 0 auto;
-        text-align: center;
-        margin-top: 10px;
-        margin-bottom:60px;
-        .tituloSection{
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 40px;
-        }
-        .aclamadas{
-            overflow-x: scroll;
-            overflow-y: hidden;
-            width: 100%;
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            padding: 0px 0px 40px 0px;
-            .peliculaItem{
-                border-radius: 25px;
-                width: 170px;
-                min-width: 170px;
-                font-size: 20px;
-                cursor: pointer;
-                margin-left: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-between;
-               
-                .imgAclamada{
-                    border-radius: 5%;
-                    width: 95%;
-                    height: 95%;
-                    object-fit: cover;
-                }
-                
-            }
-           
-        
-        }
-    }
-
-
-
-
-    .footer{
-    background-color:#9f3647;
-    color:white;
-    height: 15vh;
+.peliculas{
     display: flex;
     justify-content: center;
-    align-items: center;
-    }
+    flex-wrap: wrap;
+    gap:60px;
+    a{
+        text-decoration: none;
+        color: #ffffff;
+        .pelicula{
+            width:200px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+           
+            .imgTendencia{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                border-radius: 10px;
+               
+            }
+          
+            .tituloPelicula{
+                z-index: 2;
+                position: absolute;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                max-width: 20rem;
+                width: 100%;
+                transform: translateY(-50%) translateX(-50%);
+                h4 {
+                    font-size: 1.6rem;
+                    font-weight: bold;
+                    opacity: 0;
+                    margin-bottom: 0.5rem;
+                    letter-spacing: 0.1rem;
+                    transition: opacity 0.5s ease-in-out;
 
-    .listaNav{
-        list-style: none;
-        display: flex;
-        align-items: center;
-        .listaItem{
-            margin-left:20px;
-            .linkNav{
-                text-decoration: none;
-                color:white;
-                font-weight: 700;
-                font-size: 1.2rem;
+                }
             }
-            .administradorPeliculas{
-                background-color: #181419;
-                color: white;
-                padding: 0.5rem 1rem;
-                border-radius: 5px;
+            &:hover{
+               box-shadow: 0 0 30px #9f3648cd;
+               transform: scale(0.9);
+              
             }
+            &:hover .tituloPelicula{
+                width: 100%;
+                height: 100%;
+                backdrop-filter: blur(20px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            &:hover h4 {
+                width: 100%;
+                padding: 0.5rem;
+                opacity: 1;
+            }
+         
         }
     }
+  
+}
 
-    .flecha_arriba{
-        position: fixed;
-        bottom: 5px;
-        right: 25px;
-        cursor: pointer;
-    }
+a{       
+    text-decoration: none;        
+    color: #ffffff;         
+          
+}
+    
+.pelicula{         
+    width:200px;            
+    height: 300px;         
+    position: relative;        
+    overflow: hidden; 
+    border-radius: 10px;                      
+    transition: all 0.5s ease;                             
+}
 
- /*media query para impresion*/
+.imgTendencia{                          
+    width: 100%;                          
+    height: 100%;                          
+    object-fit: cover;                          
+    border-radius: 10px;                             
+}
 
- @media print {
+.tituloPelicula{                          
+    z-index: 2;                          
+    position: absolute;                          
+    text-align: center;                          
+    top: 50%;                          
+    left: 50%;                          
+    max-width: 20rem;                          
+    width: 100%;       
+    transform: translateY(-50%) translateX(-50%);       
+}
 
- 
-    :root {
-        --bordo: chocolate;  
-        --texto-blanco: cornflowerblue;   
-    }
 
-    .header{
-        font-weight: normal;
-        background-color: aquamarine;
-    }
+
+h4 {            
+    font-size: 1.6rem;                              
+    font-weight: bold;                              
+    opacity: 0;                              
+    margin-bottom: 0.5rem;                              
+    letter-spacing: 0.1rem;                              
+    transition: opacity 0.5s ease-in-out;         
+}
+
+
+
+
+.boton{
+              
+    border: 1px solid white;              
+    box-sizing: content-box;              
+    margin-top:50px;              
+    margin-left:20px;             
+    background-color:var(--bordo);              
+    color: white;             
+    padding: 1rem 1rem;              
+    border-radius: 5px;              
+    font-size: 1rem;              
+    font-weight: 500;             
+    text-decoration: none;              
+    margin-bottom:60px;           
+    transition: transform 0.3s, box-shadow 0.3s;       
+}
+      
+      
+.titulosiguiente{        
+    font-size: 2.5rem;          
+    font-weight: 700;          
+    margin-bottom: 40px;     
+}
+    
+.peliculasAclamadas{
+          
+    width:80%;          
+    margin: 0 auto;          
+    text-align: center;          
+    margin-top: 10px;          
+    margin-bottom:60px;
+      
+}
+  
+      
+.titulo_peliculas_aclamadas{       
+    font-size: 2.5rem;          
+    font-weight: 700;          
+    margin-bottom: 40px;      
+}
+      
+.aclamadas{
+              
+    overflow-x: scroll;              
+    overflow-y: hidden;              
+    width: 100%;              
+    display: flex;              
+    justify-content: flex-start;              
+    align-items: flex-start;              
+    padding: 0px 0px 40px 0px;    
+}
+
+
+body{
+    background-color: #181419;
+    color:white; 
 
 }
+
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #9f3647;
+}
+  
+
+.peliculaItem{
+              
+    border-radius: 25px;                  
+    width: 170px;                  
+    min-width: 170px;                  
+    font-size: 20px;                  
+    cursor: pointer;                  
+    margin-left: 30px;                  
+    display: flex;                  
+    flex-direction: column;                  
+    justify-content: space-between;                            
+}
+
+.imgAclamada{                      
+    border-radius: 5%;                      
+    width: 95%;                      
+    height: 95%;                      
+    object-fit: cover;                  
+}
+
+.tituloSection{
+              
+    font-size: 2.5rem;              
+    font-weight: 700;              
+    margin-bottom: 40px;          
+}
+  
+  
+  
+  
+      
+.footer{
+      
+    background-color:#9f3647;      
+    color:white;      
+    height: 15vh;      
+    display: flex;      
+    justify-content: center;      
+    align-items: center;      
+}
+  
+      
+.listaNav{
+          
+    list-style: none;          
+    display: flex;          
+    align-items: center;          
+    
+      
+}
+
+.listaItem{              
+    margin-left:20px;
+      
+}
+
+.linkNav{
+              
+    text-decoration: none;                  
+    color:white;                  
+    font-weight: 700;                  
+    font-size: 1.2rem;              
+}
+      
+.administradorPeliculas{
+          
+    background-color: #181419;                  
+    color: white;                  
+    padding: 0.5rem 1rem;                  
+    border-radius: 5px;              
+}
+  
+      
+.flecha_arriba{
+          
+    position: fixed;          
+    bottom: 5px;          
+    right: 25px;         
+    cursor: pointer;      
+}
+  
+   
+/*media query para impresion*/
+
+@media print {
+    
+    :root {  
+        --bordo: chocolate;    
+        --texto-blanco: cornflowerblue;    
+    }
+  
+      
+    .header{       
+        font-weight: normal;       
+        background-color: aquamarine;   
+    }
+  
+  
+}
+
+
+    
+/*Diseño INICIOS ESION*/
 
 .bodyRegistrarse{
     height: 100vh;
-    background:linear-gradient(to right top, #24242473,#24242473),url("../assets/img/bg-register.jpg");
+    background:linear-gradient(to right top, #24242473,#24242473),url("../imgs/general/fondo.jpg");
     background-size: cover;
     background-position: center;
-    .headerRegistrarse{
-        color:#ffffff;
-        height: 8vh;
-        padding:30px;
-        .anclaLogo{
-            text-decoration: none;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 1.2rem;
-             /*animacion hover*/
-            &:hover{
-                animation: tilt-n-move-shaking 0.25s infinite;
-            }
-        }
+}
+
+.headerRegistrarse{
+    color:#ffffff;
+    height: 8vh;
+    padding:30px;
+}
+
+.anclaLogo{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.seccionRegistrarse{
+    background-color:rgb(42, 42, 42);
+    width: 35%;
+    margin:0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    font-size:1.2rem;
+    color: white;
+}
+
+.tituloRegistrarse{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+form{
+    width: 80%;
+    padding:40px;
+    
+    .error-text{
+        color: #ff0000;
+        font-size: 0.8rem;
+        margin-top:0px;
+        margin-bottom: 10px;
     }
-    .main{
-         /*seccion de registrarse.html*/
-        .seccionRegistrarse{
-            background-color:rgb(42, 42, 42);
-            width: 30%;
-            margin:0 auto;
-            border-radius: 5px;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction:column;
-            justify-content: center;
-            align-items: center;
-            height: 90vh;
-            font-size:1.2rem;
-            .tituloRegistrarse{
-                font-size: 2.5rem;
-                font-weight: 700;
-                margin-bottom: 20px;
-            }
-            /*seleccionar todos los input menos el checkbox*/
-            form{
-                width: 100%;
-                padding:40px;
-                input:not(.check,.boton),select{
-                    width: 100%;
-                    margin-bottom: 10px;
-                    height: 40px;
-                    padding: 0px 20px;
-                    font-size: 1.2rem;
-                    border-radius: 20px;
-                    border: 2px solid #9f3647;
-                    background-color: #333333;
-                    outline: none;
-                    color:rgb(255, 255, 255);
-                }
-                .error input:not(.check,.boton),.error select{
-                    border: 1px solid #ff0000;
-                }
-                .error-text{
-                    color: #ff0000;
-                    font-size: 0.8rem;
-                    margin-top:0px;
-                    margin-bottom: 10px;
-                }
-              
-                .terminos{
-                    font-size: 0.8rem;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    .textoCheck{
-                        margin-left: 10px;
-                    }
-                }
-                .boton{
-                    width: 87%;
-                    box-sizing: content-box;
-                    background-color:#9f3647;
-                    border: 2px solid #9f3647;
-                    color: #ffffff;
-                    padding: 1rem 1rem;
-                    border-radius: 5px;
-                    font-size: 1rem;
-                    font-weight: 500;
-                   
-                }
-                .ayuda{
-                    margin-top:40px;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    color: #787878;
-                    font-weight:400;
-                   
-                }
-            }
-           
-        }
+    
+    input:not(.check,.boton),select{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 40px;
+        padding: 0px 20px;
+        font-size: 1.2rem;
+        border-radius: 20px;
+        border: 2px solid #9f3647;
+        background-color: #333333;
+        outline: none;
+        color:rgb(255, 255, 255);
+    }
+    .error input:not(.check,.boton),.error select{
+        border: 1px solid #ff0000;
+    }
+
+}
+
+.terminos{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.textoCheck{
+    margin-left: 10px;
+}
+.botonIS{
+    width: 87%;
+    box-sizing: content-box;
+    background-color:#9f3647;
+    border: 2px solid #9f3647;
+    color: #ffffff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
    
-    }
+}
+.ayuda{
+    margin-top:40px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #9f3647;
+    font-weight:400;
+   
 }
